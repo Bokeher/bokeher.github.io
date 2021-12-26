@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkukator średniej</title>
+    <style>
+        body {
+            background-color: #3f3f3f;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }        
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <table>
+        <tr><td> Sprawdzian: </td><td id="tdSpr"></td><td> <button id="btnSpr" onclick="addInput('tdSpr')">+</button> <button id="btnSpr" onclick="removeInput('tdSpr')">-</button></td></tr>
+        <tr><td> Aktywność:  </td><td id="tdAkt"></td><td> <button id="btnAkt" onclick="addInput('tdAkt')">+</button> <button id="btnAkt" onclick="removeInput('tdAkt')">-</button></td></tr>
+        <tr><td> Odpowiedź:  </td><td id="tdOdp"></td><td> <button id="btnOdp" onclick="addInput('tdOdp')">+</button> <button id="btnOdp" onclick="removeInput('tdOdp')">-</button></td></tr>
+        <tr><td> Projekt:    </td><td id="tdPrj"></td><td> <button id="btnPrj" onclick="addInput('tdPrj')">+</button> <button id="btnPrj" onclick="removeInput('tdPrj')">-</button></td></tr>
+        <tr><td></td></tr>
+        
+    </table>
+    <table>
+        <tr><td> Średnia:          </td><td id="tdRes"> 0.00 </td></tr>
+        <tr><td> Sugerowana ocena: </td><td id="tdSuggestedGrade"></td></tr>
+    </table>
+    <!-- <button id="btn">Oblicz</button> -->
+    <div id="d"></div>
+</body>
+</html>
