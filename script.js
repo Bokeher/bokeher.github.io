@@ -5,10 +5,10 @@ function refresh() {
 }
 
 function calculate() {
-    let sprValue = getAverage(document.getElementById("tdSpr"));
-    let aktValue = getAverage(document.getElementById("tdAkt"));
-    let odpValue = getAverage(document.getElementById("tdOdp"));
-    let prjValue = getAverage(document.getElementById("tdPrj"))
+    const sprValue = getAverage(document.getElementById("tdSpr"));
+    const aktValue = getAverage(document.getElementById("tdAkt"));
+    const odpValue = getAverage(document.getElementById("tdOdp"));
+    const prjValue = getAverage(document.getElementById("tdPrj"))
 
     const result = sprValue*0.5 + aktValue*0.2 + odpValue*0.2 + prjValue*0.1;
 
@@ -22,13 +22,12 @@ function calculate() {
 
 function getAverage(element) {
     let sum = 0;
-    count = element.childElementCount;
+    const count = element.childElementCount;
     for(let i=0; i<count; i++) {
         sum += parseFloat(element.children[i].value);
     }
-    const average = sum / count;
 
-    return average;
+    return sum / count;
 }
 
 function addInput(id) {
